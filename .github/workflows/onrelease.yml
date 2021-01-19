@@ -32,7 +32,6 @@ jobs:
         run: |
           pip install -r unit-requirements.txt
           pip install -U databricks-cli
-          pip install -e .
       - name: Run unit tests
         run: |
           echo "Launching unit tests"

@@ -6,13 +6,14 @@ from pyspark.sql import SparkSession
 
 class SampleJobUnitTest(unittest.TestCase):
     def setUp(self):
-        output_count = 10
+        # initialze stuff here
 
     def test_sample(self):
+        output_count = 10
         self.assertGreater(output_count, 0)
 
     def tearDown(self):
-        output_count = 0
+        # uninitialize here
 
 if __name__ == "__main__":
     unittest.main()
